@@ -4,6 +4,49 @@ body {
   color: #333333;
 }
 
+
+#logo a{
+  display: block;
+  height: 120px;
+  width: 120px;
+  position: relative;
+  overflow: hidden;
+}
+.retina{
+  width: 120px;
+  height: 120px;
+}
+#logo a:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+.retina:hover{
+
+}
+ #logo a:hover:after {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  
 input {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -76,7 +119,7 @@ hr {
 header {
   position: relative;
   width: auto;
-  margin: 20px auto 20px auto;
+  margin: 20px auto 0 auto;
 }
 
 header h1 {
@@ -94,29 +137,46 @@ header p {
 }
 
 nav {
-  position: absolute;
-  right: 50px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  display: flex;
   bottom: 0;
 }
 
 nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
   list-style: none;
 }
 
 nav ul li {
+
+  flex: 1 1;
   display: block;
-  float: left;
-  padding: 3px 15px;
+  padding: 10px 0 3px 0;
+  transition: all 250ms ease-in-out;
+  margin-right: 10px;
+  text-align: center;
+}
+nav ul li:hover{
+ 
 }
 
 nav ul li a {
+  padding-top: 10px;
+  border-top: 1px solid transparent;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   transition: all 0.25s ease;
+  display: block;
 }
 
 nav ul li a:hover {
-  color: #0968ec;
+ 
+  border-top: 1px solid black;
+  font-weight: bold;
+  
 }
 
 #mobileMenu {
@@ -254,7 +314,7 @@ nav ul li a:hover {
   font-family: 'Open Sans', sans-serif;
   clear: both;
   width: auto;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -262,8 +322,9 @@ nav ul li a:hover {
 #text_columns h3 {
   font-size: 20px;
   border-bottom: 1px solid #d6d0c1;
-  padding: 20px 0;
+  padding: 40px 10%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .item__container{

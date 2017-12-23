@@ -3,14 +3,14 @@
 
 After cloning the repository
 
-Run ** npm install **
+Run **npm install**
 
 
 ## Deployment
 
 To create a deployable snapshot of the site 
 
-Run ** npm build **
+Run **npm build**
 
 
 

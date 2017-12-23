@@ -171,11 +171,16 @@ nav ul li a {
   display: block;
 }
 
-nav ul li a:hover {
-  border-top: 1px solid black;
-  font-weight: bold;
-}
 
+
+.currentRoute {
+  border-top: 1px solid black;
+  
+  
+}
+nav ul li a:hover{
+  text-shadow: 0 0 .35px #333, 0 0 .35px #333;
+}
 #mobileMenu {
   position: fixed;
   top: 0;
@@ -412,7 +417,6 @@ footer .wrapper .column.midlist ul li {
   padding: 0 0 10px 25px;
   margin-bottom: 10px;
   border-bottom: 1px solid #444444;
-  background: url(img/arrowright2.png) left 6px no-repeat;
 }
 
 footer .wrapper .column.midlist ul li a:hover {
@@ -760,4 +764,11 @@ footer .wrapper .column h4 {
     margin-left: 60px;
     font-size: 14px;
   }
+}
+
+
+/* Preisliste */
+
+.price-panel{
+  
 }

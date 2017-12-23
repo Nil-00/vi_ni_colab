@@ -4,20 +4,19 @@ body {
   color: #333333;
 }
 
-
-#logo a{
+#logo a {
   display: block;
   height: 120px;
   width: 120px;
   position: relative;
   overflow: hidden;
 }
-.retina{
+.retina {
   width: 120px;
   height: 120px;
 }
 #logo a:after {
-  content: "";
+  content: '';
   position: absolute;
   top: -110%;
   left: -210%;
@@ -25,28 +24,27 @@ body {
   height: 200%;
   opacity: 0;
   transform: rotate(30deg);
-  
+
   background: rgba(255, 255, 255, 0.13);
   background: linear-gradient(
-    to right, 
+    to right,
     rgba(255, 255, 255, 0.13) 0%,
     rgba(255, 255, 255, 0.13) 77%,
     rgba(255, 255, 255, 0.5) 92%,
-    rgba(255, 255, 255, 0.0) 100%
+    rgba(255, 255, 255, 0) 100%
   );
 }
-.retina:hover{
-
+.retina:hover {
 }
- #logo a:hover:after {
-    opacity: 1;
-    top: -30%;
-    left: -30%;
-    transition-property: left, top, opacity;
-    transition-duration: 0.7s, 0.7s, 0.15s;
-    transition-timing-function: ease;
-  }
-  
+#logo a:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
 input {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -84,7 +82,7 @@ strong {
   font-weight: bold;
 }
 
-figure{
+figure {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +112,6 @@ hr {
 }
 
 /* HEADER */
-
 
 header {
   position: relative;
@@ -152,18 +149,17 @@ nav ul li {
   flex: 1 1 auto;
   display: block;
   padding: 10px 0 3px 0;
- 
+
   transition: all 250ms ease-in-out;
 
   text-align: center;
 }
 
 nav ul li:not(:last-child) {
- margin-right: 20px;
+  margin-right: 20px;
 }
 
-nav ul li:hover{
- 
+nav ul li:hover {
 }
 
 nav ul li a {
@@ -176,10 +172,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
- 
   border-top: 1px solid black;
   font-weight: bold;
-  
 }
 
 #mobileMenu {
@@ -240,7 +234,7 @@ nav ul li a:hover {
 
 /* BUTTONS */
 
-.content{
+.content {
   margin: 0 5%;
 }
 .button {
@@ -299,15 +293,15 @@ nav ul li a:hover {
   left: 200;
 }
 
-.header__container{
-  min-width: 350px;
+.header__container {
+  background-color: #000;
+  display: flex;
 }
 
 .headerpic {
-  display: block;
   margin: auto;
- width: 100%;
-  height: auto;
+  align-self: center;
+  max-height: 400px;
 }
 
 /* FOUR COLUMNS */
@@ -331,7 +325,7 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.item__container{
+.item__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -348,13 +342,11 @@ nav ul li a:hover {
   opacity: 0.9;
   width: 200px;
   height: 200px;
-
 }
 
 #four_columns .img-item a img:hover {
   transform: scale(1.1);
   opacity: 1;
-
 }
 
 /* TWO COLUMNS */
@@ -663,7 +655,9 @@ footer .wrapper .column h4 {
 }
 
 @media (max-width: 500px) {
-  #logo a{margin: auto;}
+  #logo a {
+    margin: auto;
+  }
   header {
     margin-top: 80px;
     text-align: center;

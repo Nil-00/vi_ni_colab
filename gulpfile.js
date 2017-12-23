@@ -23,7 +23,7 @@ gulp.task('sync', function() {
     }
   });
   gulp.watch(['css/**/*.css', 'js/**/*.js'], {cwd: 'site'}, ['bundle']);
-  gulp.watch(['*.js'], {cwd: 'site'}, reload);
+  gulp.watch(['*.js','*.html'], {cwd: 'site'}, reload);
   // gulp.watch(['*.html', 'css/**/*.css', 'js/**/*.js'], {cwd: 'site'}, reload);
 });
 

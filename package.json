@@ -23,8 +23,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp",
-    "build": "gulp build && webpack -p",
+    "start": "gulp serve",
+    "build": "gulp build",
     "serve": "gulp serve"
   },
   "repository": {

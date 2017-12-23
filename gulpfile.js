@@ -83,5 +83,5 @@ gulp.task('sass:watch', function () {
 
 // The default task (called when you run `gulp` from cli)
 // gulp.task('default', ['images']);
-gulp.task('serve', ['sass:watch','sync']);
+gulp.task('serve', ['sass','bundle','sass:watch','sync']);
 gulp.task('build', ['clean','images','html','script','sass' ]);

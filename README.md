@@ -10,7 +10,7 @@ Run **npm install**
 
 To create a deployable snapshot of the site 
 
-Run **npm build**
+Run **npm run build**
 
 
 

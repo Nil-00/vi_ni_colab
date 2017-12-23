@@ -2,6 +2,7 @@ body {
   background: #fff;
   font-family: 'Open Sans', sans-serif;
   color: #333333;
+
 }
 
 #logo a {
@@ -307,6 +308,7 @@ nav ul li a:hover{
   margin: auto;
   align-self: center;
   max-height: 400px;
+  width:100%;
 }
 
 /* FOUR COLUMNS */
@@ -523,10 +525,6 @@ footer .wrapper .column h4 {
   position: relative;
 }
 
-/* Show active item in the pagination */
-.slidesjs-pagination .active {
-  color: red;
-}
 
 #slider_content1 p .responsive_button,
 #slider_content2 p .responsive_button,
@@ -617,6 +615,7 @@ footer .wrapper .column h4 {
   footer .wrapper .column {
     font-size: 12px;
     width: 230px;
+
   }
 }
 
@@ -656,6 +655,7 @@ footer .wrapper .column h4 {
   footer .wrapper .social {
     display: none;
   }
+
 }
 
 @media (max-width: 500px) {
@@ -665,6 +665,7 @@ footer .wrapper .column h4 {
   header {
     margin-top: 80px;
     text-align: center;
+    margin-bottom: 25px;
   }
   #spacer {
     height: auto;

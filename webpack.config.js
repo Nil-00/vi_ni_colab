@@ -1,10 +1,7 @@
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const path = require('path');
-
 module.exports = {
-    entry: './js/app.js',
+    entry: './site/js/app.js',
     output: {
-      path: __dirname,
+      path: __dirname+'/site',
       filename: 'bundle.min.js'
     },
     module: {
@@ -19,12 +16,4 @@ module.exports = {
         }
       ]
     },
-    context: path.join(__dirname),
-    plugins: [
-        new CopyWebpackPlugin([
-            { from: 'img',to:'img' },
-            {from: '*.html'},
-            {from: 'bundle.min.js'},
-        ])
-    ],
   };
